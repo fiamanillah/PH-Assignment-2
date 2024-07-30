@@ -161,7 +161,6 @@ body{
   color: var(--primery-text);
   font-size: var(--fs-body-medium);
   margin: 0 auto;
-  position: relative;
   max-width: 1440px;
   background-color: #000000;
 }
@@ -170,7 +169,9 @@ body{
   background-color: #e6533c60;
 }
 
-
+p{
+  color: var(--secondary-text);
+}
 
 
 /* header section */
@@ -241,31 +242,94 @@ main{
     display: flex;
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgb(31, 31, 31) 100%);
     padding: 0 5%;
-
 }
 
 .hero-left-part{
-    width: 50%;
+    width: 60%;
+    padding: 5% 5% 0 0;
 }
 
 .hero-left-part h1{
     font-size: 8rem;
+    line-height: 8rem;
 }
 
 .hero-left-part h1 span{
-    display: inline;
+    display: inline-block;
+    font-size: 12rem;
     font-family: 'miama', sans-serif;
     font-weight: var(--fw-medium);
 }
 
 
 .hero-left-part p{
+    color: var(--secondary-text);
     font-size: var(--fs-body-large);
     line-height: var(--spacing-8);
     margin: 20px 0;
 }
 
 
+.hero-left-btn{
+  display: flex;
+}
+.hero-left-btn button{
+  color: #FFFFFF;
+  border-radius: var(--radius-full);
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2% 5%;
+  
+}
+
+.hero-left-btn button:nth-child(1){
+  background-color: var(--primary);
+  margin-right: 10px;
+}
+.hero-left-btn button:nth-child(2){
+  border: 1px solid #ffffff;
+}
+
 .hero-right-part{
-    width: 50%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero-right-sticker-1{
+  position: absolute;
+  top: 25%;
+  right: 0;
+  background-color: #3030307f;
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #a9a9a94d;
+}
+.hero-right-sticker-1 h2{
+  font-size: 4rem;
+}
+
+.hero-right-sticker-2{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  background-color: #3030307f;
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #a9a9a94d;
+}
+.circle{
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.hero-right-sticker-2 h2{
+  font-size: 4rem;
 }
