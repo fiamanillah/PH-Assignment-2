@@ -162,6 +162,8 @@ body{
   font-size: var(--fs-body-medium);
   margin: 0 auto;
   position: relative;
+  max-width: 1440px;
+  background-color: #000000;
 }
 
 ::selection{
@@ -180,8 +182,8 @@ header{
     height: 150px;
     background-color: rgb(31, 31, 31);
     max-width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
+    padding: 0 5%;
 }
 
 header h1 {
@@ -229,7 +231,6 @@ nav ul li:hover{
 }
 
 main{
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -239,8 +240,7 @@ main{
 .hero-section{
     display: flex;
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgb(31, 31, 31) 100%);
-    /* padding-top: 150px; */
-    padding: 0 50px;
+    padding: 0 5%;
 
 }
 
