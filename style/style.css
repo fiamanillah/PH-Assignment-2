@@ -116,7 +116,6 @@ li{list-style: none;}
 
 a,
 img,
-span,
 input,
 video,
 button{display: block;}
@@ -159,7 +158,6 @@ html{
 
 body{
   color: var(--primery-text);
-  font-size: var(--fs-body-medium);
   margin: 0 auto;
   max-width: 1440px;
   background-color: #000000;
@@ -183,7 +181,6 @@ header{
     align-items: center;
     height: 150px;
     background-color: rgb(31, 31, 31);
-    max-width: 100%;
     margin: 0 auto;
     padding: 0 5%;
 }
@@ -231,6 +228,17 @@ nav ul li:hover{
     transition: var(--tr-duration-long);
 
 }
+
+
+.hamburger{
+  display: none;
+}
+
+.hamburger img{
+  width: 40px;
+}
+
+
 
 main{
     margin: 0 auto;
@@ -438,4 +446,24 @@ section{
   border-radius: var(--radius-large);
   object-fit: none;
   object-position: 66% 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 576px){
+  
 }
