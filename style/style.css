@@ -170,7 +170,7 @@ body{
 }
 
 p{
-  font-size: var(--fs-body-medium);
+  font-size: var(--fs-body-large);
   color: var(--secondary-text);
 }
 
@@ -238,6 +238,7 @@ main{
 
 section{
   padding: 0 5%;
+  margin-top: 5%;
 }
 
 /* Hero section  */
@@ -245,6 +246,7 @@ section{
 .hero-section{
     display: flex;
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(31, 31, 31) 100%);
+    margin-top: 0;
 }
 
 .hero-left-part{
@@ -267,7 +269,6 @@ section{
 
 .hero-left-part p{
     color: var(--secondary-text);
-    font-size: var(--fs-body-large);
     line-height: var(--spacing-8);
     margin: 20px 0;
 }
@@ -390,5 +391,51 @@ section{
   line-height: 4rem;
 }
 
-.habbit-text p{
+
+
+/* Run Section  */
+
+.run-section{
+  background-color: var(--secondary-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--radius-large);
+  padding: 2% 3%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.run-left{
+  width: 40%;
+}
+
+.run-left h2{
+  font-size: var(--fs-display-large);
+}
+
+.run-left p{
+  margin: 20px 0;
+}
+
+.run-left button{
+  color: #FFFFFF;
+  background-color: var(--primary);
+  font-size: var(--fs-headline-small);
+  padding: 3% 10%;
+  border-radius: var(--radius-full);
+  margin: 20px 0;
+}
+
+.run-right{
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+
+.run-right img{
+  width: 90%;
+  border-radius: var(--radius-large);
+  object-fit: none;
+  object-position: 66% 30%;
 }
