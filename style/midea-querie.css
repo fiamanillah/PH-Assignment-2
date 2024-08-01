@@ -43,6 +43,62 @@
         width: 100%;
     }
 
+
+
+    .bmi-header{
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .bmi-section .bmi-wrapper{
+        flex-direction: column;
+    }
+
+    .bmi-left{
+        width: 100%;
+    }
+    .bmi-right{
+        width: 100%;
+    }
+
+    .membership-header{
+        width: 70%;
+    }
+
+    .membership-wrapper{
+        flex-direction: column;
+    }
+
+    .membership-plan{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+
+    .team-header{
+        width: 100%;
+    }
+
+    .footer-wrapper{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .footer-info{
+        grid-column: span 2;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .footer-menu{
+        width: 100%;
+    }
+
+    .footer-menu h2{
+        font-size: 3rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 576px){
@@ -81,9 +137,47 @@
         width: 80%;
         margin: 0 auto;
     }
+    .training-wrapper .training-item1{
+        grid-column: 1 / 6;
+    }
+    .training-wrapper .training-item2{
+        grid-column: 6 / 11;
+    }
+    .training-wrapper .training-item4{
+        grid-column: 1 / 5;
+    }
+    .training-wrapper .training-item5{
+        grid-column: 5 / 11;
+    }
+
+    .training-wrapper .training-item3{
+        display: none;
+    }
+    .training-wrapper .training-item6{
+        display: none;
+    }
 
 
     .run-left button{
         width: 100%;
-      }
+    }
+
+    .membership-header{
+        width: 100%;
+    }
+
+    .team-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-menu{
+        margin-bottom: 40px;
+    }
+
 }
